@@ -54,10 +54,12 @@ UIS.InputBegan:connect(function(Input)
 			print("L")
 			if lg == true then
 				lightsOff:FireServer()
+				wait(0.1)
 				lg = false
-			if lg == false then
-				lg = true
-				lightsOn:FireServer()	
+			elseif lg == false then
+				lightsOn:FireServer()
+				wait(0.1)
+				lg = true	
 				end
 		 
 		elseif KeyCode == Enum.KeyCode.F then
@@ -68,9 +70,6 @@ UIS.InputBegan:connect(function(Input)
 		elseif KeyCode == Enum.KeyCode.R then
 			print("R was pressed")
 			
-			end
-			
 		end
-		
 	end
 end)
