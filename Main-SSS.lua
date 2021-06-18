@@ -11,15 +11,50 @@ local dn = RS:WaitForChild("Down")
 local eb = RS:WaitForChild("EB") --
 local ho = RS:WaitForChild("Horn") --
 -----
+local minusthree = "-1.1947"
+local minustwo = "-0.32"
+local minusone = "-0.1325"
 local zero = "0"
 local one = "0.11574"
 local two = "0.8754"
 local three = "1.0522"
+---
 local maxL = "90"
 local maxR = "-90"
 -----
 local function forward() -- Moves the KM Forward
-	if script.Km.Value == 0 then
+	
+	if script.Km.Value == -3 then
+		
+		train.FLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train.FRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train.RLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train.RRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		-----
+		script.Km.Value = -2
+		wait(1)
+    
+	elseif script.Km.Value == -2 then
+	
+		train.FLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train.FRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train.RLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train.RRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		-----
+		script.Km.Value = -1
+		wait(1)
+		
+	elseif script.Km.Value == -1 then
+		
+		train.FLAxle.HingeConstraint.MotorMaxAcceleration = zero
+		train.FRAxle.HingeConstraint.MotorMaxAcceleration = zero
+		train.RLAxle.HingeConstraint.MotorMaxAcceleration = zero
+		train.RRAxle.HingeConstraint.MotorMaxAcceleration = zero
+		-----
+		script.Km.Value = 0
+		wait(1)
+	
+	elseif script.Km.Value == 0 then
 		
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = one
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = one
@@ -91,6 +126,39 @@ local function reverse() -- Moves the KM Backwards
 		
 	elseif script.Km.Value == 0 then
 		
+		train.FLAxle.HingeConstraint.AngularVelocity = zero
+		train.FRAxle.HingeConstraint.AngularVelocity = zero
+		train.RLAxle.HingeConstraint.AngularVelocity = zero	
+		train.RRAxle.HingeConstraint.AngularVelocity = zero
+		-----
+		train.FLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train.FRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train.RLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train.RRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		-----
+		script.Km.Value = -1
+		wait(1)
+		
+	elseif script.Km.Value == -1 then
+		
+		train.FLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train.FRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train.RLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train.RRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		-----
+		script.Km.Value = -2
+		wait(1)
+		
+	elseif script.Km.Value == -2 then
+		
+		train.FLAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+		train.FRAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+		train.RLAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+		train.RRAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+		-----
+		script.Km.Value = -3
+		wait(1)
+	
 	
 	end
 end

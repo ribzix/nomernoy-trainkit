@@ -27,7 +27,7 @@ UIS.InputBegan:connect(function(Input)
 
 
 		elseif KeyCode == Enum.KeyCode.A then
-			print("A was pressed")
+			print("FWD was pressed")
 			forward:FireServer()
 			
 		elseif KeyCode == Enum.KeyCode.W then
@@ -41,7 +41,7 @@ UIS.InputBegan:connect(function(Input)
 
 
 		elseif KeyCode == Enum.KeyCode.D then
-			print("D was pressed")
+			print("RWD was pressed")
 			reverse:FireServer()
 
 
