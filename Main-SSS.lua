@@ -32,6 +32,7 @@ local function forward() -- Moves the KM Forward
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
 		-----
 		script.Km.Value = -2
+		workspace.Km.Value.Value = -2
 		wait(1)
     
 	elseif script.Km.Value == -2 then
@@ -42,6 +43,7 @@ local function forward() -- Moves the KM Forward
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = minusone
 		-----
 		script.Km.Value = -1
+		workspace.Km.Value.Value = -1
 		wait(1)
 		
 	elseif script.Km.Value == -1 then
@@ -52,6 +54,7 @@ local function forward() -- Moves the KM Forward
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = zero
 		-----
 		script.Km.Value = 0
+		workspace.Km.Value.Value = 0
 		wait(1)
 	
 	elseif script.Km.Value == 0 then
@@ -67,6 +70,7 @@ local function forward() -- Moves the KM Forward
 		train.RRAxle.HingeConstraint.AngularVelocity = maxR
 		-----
 		script.Km.Value = 1
+		workspace.Km.Value.Value = 1
 		wait(1)
 		
 	elseif script.Km.Value == 1 then
@@ -77,6 +81,7 @@ local function forward() -- Moves the KM Forward
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = two
 		-----
 		script.Km.Value = 2
+		workspace.Km.Value.Value = 2
 		wait(1)
 		
 	elseif script.Km.Value == 2 then
@@ -87,6 +92,7 @@ local function forward() -- Moves the KM Forward
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = three
 		-----
 		script.Km.Value = 3
+		workspace.Km.Value.Value = 3
 		wait(1)
 
 	end
@@ -102,6 +108,7 @@ local function reverse() -- Moves the KM Backwards
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = two
 		-----
 		script.Km.Value = 2
+		workspace.Km.Value.Value = 2
 		wait(1)
 		
 	elseif script.Km.Value == 2 then
@@ -112,6 +119,7 @@ local function reverse() -- Moves the KM Backwards
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = one
 		-----
 		script.Km.Value = 1
+		workspace.Km.Value.Value = 1
 		wait(1)
 		
 	elseif script.Km.Value == 1 then
@@ -122,6 +130,7 @@ local function reverse() -- Moves the KM Backwards
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = zero
 		-----
 		script.Km.Value = 0
+		workspace.Km.Value.Value = 0
 		wait(1)
 		
 	elseif script.Km.Value == 0 then
@@ -137,6 +146,7 @@ local function reverse() -- Moves the KM Backwards
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = minusone
 		-----
 		script.Km.Value = -1
+		workspace.Km.Value.Value = -1
 		wait(1)
 		
 	elseif script.Km.Value == -1 then
@@ -147,6 +157,7 @@ local function reverse() -- Moves the KM Backwards
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
 		-----
 		script.Km.Value = -2
+		workspace.Km.Value.Value = -2
 		wait(1)
 		
 	elseif script.Km.Value == -2 then
@@ -157,6 +168,7 @@ local function reverse() -- Moves the KM Backwards
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = minusthree
 		-----
 		script.Km.Value = -3
+		workspace.Km.Value.Value = -3
 		wait(1)
 	
 	
