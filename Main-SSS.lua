@@ -1,4 +1,7 @@
 local train = workspace.BogeyTest
+local trainA = workspace.BogeyONE
+local train1 = workspace.TrainC2.BogeyONE
+local train1A = workspace.TrainC2.BogeyTest
 -----
 local RS = game:GetService("ReplicatedStorage")
 -----
@@ -11,16 +14,16 @@ local dn = RS:WaitForChild("Down")
 local eb = RS:WaitForChild("EB") --
 local ho = RS:WaitForChild("Horn") --
 -----
-local minusthree = "-1.1947"
-local minustwo = "-0.32"
-local minusone = "-0.1325"
+local minusthree = "-8"
+local minustwo = "-4"
+local minusone = "-2"
 local zero = "0"
-local one = "0.11574"
-local two = "0.8754"
-local three = "1.0522"
+local one = "2"
+local two = "4"
+local three = "8"
 ---
-local maxL = "90"
-local maxR = "-90"
+local maxL = "80"
+local maxR = "-80"
 -----
 local function forward() -- Moves the KM Forward
 	
@@ -30,6 +33,21 @@ local function forward() -- Moves the KM Forward
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		
+		trainA.FLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		trainA.FRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		trainA.RLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		trainA.RRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		
+		train1.FLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train1.FRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train1.RLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train1.RRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+
+		train1A.FLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train1A.FRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train1A.RLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train1A.RRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
 		-----
 		script.Km.Value = -2
 		workspace.Km.Value.Value = -2
@@ -41,6 +59,21 @@ local function forward() -- Moves the KM Forward
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = minusone
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = minusone
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		
+		trainA.FLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		trainA.FRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		trainA.RLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		trainA.RRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		
+		train1.FLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train1.FRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train1.RLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train1.RRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+
+		train1A.FLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train1A.FRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train1A.RLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train1A.RRAxle.HingeConstraint.MotorMaxAcceleration = minusone
 		-----
 		script.Km.Value = -1
 		workspace.Km.Value.Value = -1
@@ -52,6 +85,21 @@ local function forward() -- Moves the KM Forward
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = zero
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = zero
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = zero
+		
+		trainA.FLAxle.HingeConstraint.MotorMaxAcceleration = zero
+		trainA.FRAxle.HingeConstraint.MotorMaxAcceleration = zero
+		trainA.RLAxle.HingeConstraint.MotorMaxAcceleration = zero
+		trainA.RRAxle.HingeConstraint.MotorMaxAcceleration = zero
+		
+		train1.FLAxle.HingeConstraint.MotorMaxAcceleration = zero
+		train1.FRAxle.HingeConstraint.MotorMaxAcceleration = zero
+		train1.RLAxle.HingeConstraint.MotorMaxAcceleration = zero
+		train1.RRAxle.HingeConstraint.MotorMaxAcceleration = zero
+
+		train1A.FLAxle.HingeConstraint.MotorMaxAcceleration = zero
+		train1A.FRAxle.HingeConstraint.MotorMaxAcceleration = zero
+		train1A.RLAxle.HingeConstraint.MotorMaxAcceleration = zero
+		train1A.RRAxle.HingeConstraint.MotorMaxAcceleration = zero
 		-----
 		script.Km.Value = 0
 		workspace.Km.Value.Value = 0
@@ -63,11 +111,41 @@ local function forward() -- Moves the KM Forward
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = one
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = one
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = one
+		
+		trainA.FLAxle.HingeConstraint.MotorMaxAcceleration = one
+		trainA.FRAxle.HingeConstraint.MotorMaxAcceleration = one
+		trainA.RLAxle.HingeConstraint.MotorMaxAcceleration = one
+		trainA.RRAxle.HingeConstraint.MotorMaxAcceleration = one
+		
+		train1.FLAxle.HingeConstraint.MotorMaxAcceleration = one
+		train1.FRAxle.HingeConstraint.MotorMaxAcceleration = one
+		train1.RLAxle.HingeConstraint.MotorMaxAcceleration = one
+		train1.RRAxle.HingeConstraint.MotorMaxAcceleration = one
+
+		train1A.FLAxle.HingeConstraint.MotorMaxAcceleration = one
+		train1A.FRAxle.HingeConstraint.MotorMaxAcceleration = one
+		train1A.RLAxle.HingeConstraint.MotorMaxAcceleration = one
+		train1A.RRAxle.HingeConstraint.MotorMaxAcceleration = one
 		-----
 		train.FLAxle.HingeConstraint.AngularVelocity = maxL
 		train.FRAxle.HingeConstraint.AngularVelocity = maxR
 		train.RLAxle.HingeConstraint.AngularVelocity = maxL	
 		train.RRAxle.HingeConstraint.AngularVelocity = maxR
+		
+		trainA.FLAxle.HingeConstraint.AngularVelocity = maxL
+		trainA.FRAxle.HingeConstraint.AngularVelocity = maxR
+		trainA.RLAxle.HingeConstraint.AngularVelocity = maxL	
+		trainA.RRAxle.HingeConstraint.AngularVelocity = maxR
+		
+		train1.FLAxle.HingeConstraint.AngularVelocity = maxL
+		train1.FRAxle.HingeConstraint.AngularVelocity = maxR
+		train1.RLAxle.HingeConstraint.AngularVelocity = maxL	
+		train1.RRAxle.HingeConstraint.AngularVelocity = maxR
+
+		train1A.FLAxle.HingeConstraint.AngularVelocity = maxL
+		train1A.FRAxle.HingeConstraint.AngularVelocity = maxR
+		train1A.RLAxle.HingeConstraint.AngularVelocity = maxL	
+		train1A.RRAxle.HingeConstraint.AngularVelocity = maxR
 		-----
 		script.Km.Value = 1
 		workspace.Km.Value.Value = 1
@@ -79,6 +157,21 @@ local function forward() -- Moves the KM Forward
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = two
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = two
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = two
+		
+		trainA.FLAxle.HingeConstraint.MotorMaxAcceleration = two
+		trainA.FRAxle.HingeConstraint.MotorMaxAcceleration = two
+		trainA.RLAxle.HingeConstraint.MotorMaxAcceleration = two
+		trainA.RRAxle.HingeConstraint.MotorMaxAcceleration = two
+		
+		train1.FLAxle.HingeConstraint.MotorMaxAcceleration = two
+		train1.FRAxle.HingeConstraint.MotorMaxAcceleration = two
+		train1.RLAxle.HingeConstraint.MotorMaxAcceleration = two
+		train1.RRAxle.HingeConstraint.MotorMaxAcceleration = two
+
+		train1A.FLAxle.HingeConstraint.MotorMaxAcceleration = two
+		train1A.FRAxle.HingeConstraint.MotorMaxAcceleration = two
+		train1A.RLAxle.HingeConstraint.MotorMaxAcceleration = two
+		train1A.RRAxle.HingeConstraint.MotorMaxAcceleration = two
 		-----
 		script.Km.Value = 2
 		workspace.Km.Value.Value = 2
@@ -90,6 +183,21 @@ local function forward() -- Moves the KM Forward
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = three
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = three
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = three
+		
+		trainA.FLAxle.HingeConstraint.MotorMaxAcceleration = three
+		trainA.FRAxle.HingeConstraint.MotorMaxAcceleration = three
+		trainA.RLAxle.HingeConstraint.MotorMaxAcceleration = three
+		trainA.RRAxle.HingeConstraint.MotorMaxAcceleration = three
+		
+		train1.FLAxle.HingeConstraint.MotorMaxAcceleration = three
+		train1.FRAxle.HingeConstraint.MotorMaxAcceleration = three
+		train1.RLAxle.HingeConstraint.MotorMaxAcceleration = three
+		train1.RRAxle.HingeConstraint.MotorMaxAcceleration = three
+
+		train1A.FLAxle.HingeConstraint.MotorMaxAcceleration = three
+		train1A.FRAxle.HingeConstraint.MotorMaxAcceleration = three
+		train1A.RLAxle.HingeConstraint.MotorMaxAcceleration = three
+		train1A.RRAxle.HingeConstraint.MotorMaxAcceleration = three
 		-----
 		script.Km.Value = 3
 		workspace.Km.Value.Value = 3
@@ -106,6 +214,21 @@ local function reverse() -- Moves the KM Backwards
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = two
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = two
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = two
+		
+		trainA.FLAxle.HingeConstraint.MotorMaxAcceleration = two
+		trainA.FRAxle.HingeConstraint.MotorMaxAcceleration = two
+		trainA.RLAxle.HingeConstraint.MotorMaxAcceleration = two
+		trainA.RRAxle.HingeConstraint.MotorMaxAcceleration = two
+		
+		train1.FLAxle.HingeConstraint.MotorMaxAcceleration = two
+		train1.FRAxle.HingeConstraint.MotorMaxAcceleration = two
+		train1.RLAxle.HingeConstraint.MotorMaxAcceleration = two
+		train1.RRAxle.HingeConstraint.MotorMaxAcceleration = two
+
+		train1A.FLAxle.HingeConstraint.MotorMaxAcceleration = two
+		train1A.FRAxle.HingeConstraint.MotorMaxAcceleration = two
+		train1A.RLAxle.HingeConstraint.MotorMaxAcceleration = two
+		train1A.RRAxle.HingeConstraint.MotorMaxAcceleration = two
 		-----
 		script.Km.Value = 2
 		workspace.Km.Value.Value = 2
@@ -117,6 +240,21 @@ local function reverse() -- Moves the KM Backwards
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = one
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = one
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = one
+		
+		trainA.FLAxle.HingeConstraint.MotorMaxAcceleration = one
+		trainA.FRAxle.HingeConstraint.MotorMaxAcceleration = one
+		trainA.RLAxle.HingeConstraint.MotorMaxAcceleration = one
+		trainA.RRAxle.HingeConstraint.MotorMaxAcceleration = one
+		
+		train1.FLAxle.HingeConstraint.MotorMaxAcceleration = one
+		train1.FRAxle.HingeConstraint.MotorMaxAcceleration = one
+		train1.RLAxle.HingeConstraint.MotorMaxAcceleration = one
+		train1.RRAxle.HingeConstraint.MotorMaxAcceleration = one
+
+		train1A.FLAxle.HingeConstraint.MotorMaxAcceleration = one
+		train1A.FRAxle.HingeConstraint.MotorMaxAcceleration = one
+		train1A.RLAxle.HingeConstraint.MotorMaxAcceleration = one
+		train1A.RRAxle.HingeConstraint.MotorMaxAcceleration = one
 		-----
 		script.Km.Value = 1
 		workspace.Km.Value.Value = 1
@@ -128,6 +266,21 @@ local function reverse() -- Moves the KM Backwards
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = zero
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = zero
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = zero
+		
+		trainA.FLAxle.HingeConstraint.MotorMaxAcceleration = zero
+		trainA.FRAxle.HingeConstraint.MotorMaxAcceleration = zero
+		trainA.RLAxle.HingeConstraint.MotorMaxAcceleration = zero
+		trainA.RRAxle.HingeConstraint.MotorMaxAcceleration = zero
+		
+		train1.FLAxle.HingeConstraint.MotorMaxAcceleration = zero
+		train1.FRAxle.HingeConstraint.MotorMaxAcceleration = zero
+		train1.RLAxle.HingeConstraint.MotorMaxAcceleration = zero
+		train1.RRAxle.HingeConstraint.MotorMaxAcceleration = zero
+
+		train1A.FLAxle.HingeConstraint.MotorMaxAcceleration = zero
+		train1A.FRAxle.HingeConstraint.MotorMaxAcceleration = zero
+		train1A.RLAxle.HingeConstraint.MotorMaxAcceleration = zero
+		train1A.RRAxle.HingeConstraint.MotorMaxAcceleration = zero
 		-----
 		script.Km.Value = 0
 		workspace.Km.Value.Value = 0
@@ -139,11 +292,41 @@ local function reverse() -- Moves the KM Backwards
 		train.FRAxle.HingeConstraint.AngularVelocity = zero
 		train.RLAxle.HingeConstraint.AngularVelocity = zero	
 		train.RRAxle.HingeConstraint.AngularVelocity = zero
+		
+		trainA.FLAxle.HingeConstraint.AngularVelocity = zero
+		trainA.FRAxle.HingeConstraint.AngularVelocity = zero
+		trainA.RLAxle.HingeConstraint.AngularVelocity = zero	
+		trainA.RRAxle.HingeConstraint.AngularVelocity = zero
+		
+		train1.FLAxle.HingeConstraint.AngularVelocity = zero
+		train1.FRAxle.HingeConstraint.AngularVelocity = zero
+		train1.RLAxle.HingeConstraint.AngularVelocity = zero	
+		train1.RRAxle.HingeConstraint.AngularVelocity = zero
+
+		train1A.FLAxle.HingeConstraint.AngularVelocity = zero
+		train1A.FRAxle.HingeConstraint.AngularVelocity = zero
+		train1A.RLAxle.HingeConstraint.AngularVelocity = zero	
+		train1A.RRAxle.HingeConstraint.AngularVelocity = zero
 		-----
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = minusone
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = minusone
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = minusone
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		
+		trainA.FLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		trainA.FRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		trainA.RLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		trainA.RRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		
+		train1.FLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train1.FRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train1.RLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train1.RRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+
+		train1A.FLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train1A.FRAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train1A.RLAxle.HingeConstraint.MotorMaxAcceleration = minusone
+		train1A.RRAxle.HingeConstraint.MotorMaxAcceleration = minusone
 		-----
 		script.Km.Value = -1
 		workspace.Km.Value.Value = -1
@@ -155,6 +338,21 @@ local function reverse() -- Moves the KM Backwards
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		
+		trainA.FLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		trainA.FRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		trainA.RLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		trainA.RRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		
+		train1.FLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train1.FRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train1.RLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train1.RRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+
+		train1A.FLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train1A.FRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train1A.RLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
+		train1A.RRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
 		-----
 		script.Km.Value = -2
 		workspace.Km.Value.Value = -2
@@ -166,6 +364,21 @@ local function reverse() -- Moves the KM Backwards
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = minusthree
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = minusthree
 		train.RRAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+		
+		trainA.FLAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+		trainA.FRAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+		trainA.RLAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+		trainA.RRAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+		
+		train1.FLAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+		train1.FRAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+		train1.RLAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+		train1.RRAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+
+		train1A.FLAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+		train1A.FRAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+		train1A.RLAxle.HingeConstraint.MotorMaxAcceleration = minusthree
+		train1A.RRAxle.HingeConstraint.MotorMaxAcceleration = minusthree
 		-----
 		script.Km.Value = -3
 		workspace.Km.Value.Value = -3
