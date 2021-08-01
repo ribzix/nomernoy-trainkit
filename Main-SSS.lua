@@ -400,3 +400,4 @@ local function lightsOff()
 	train.PartOne.SpotLight.Enabled = false
 end
 lof.OnServerEvent:Connect(lightsOff)
+
