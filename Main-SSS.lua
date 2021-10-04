@@ -33,25 +33,25 @@ local function forward() -- Moves the KM Forward
 		train.Wheel3.Friction = 1
 		train.Wheel4.Friction = 1
 
-		train.FLAxle.HingeConstraint.AngularVelocity = maxR
-		train.FRAxle.HingeConstraint.AngularVelocity = maxL
-		train.RLAxle.HingeConstraint.AngularVelocity = maxR
-		train.RRAxle.HingeConstraint.AngularVelocity = maxL
+		train.FLAxle.HingeConstraint.AngularVelocity = zero
+		train.FRAxle.HingeConstraint.AngularVelocity = zero
+		train.RLAxle.HingeConstraint.AngularVelocity = zero
+		train.RRAxle.HingeConstraint.AngularVelocity = zero
 
-		trainA.FLAxle.HingeConstraint.AngularVelocity = maxR
-		trainA.FRAxle.HingeConstraint.AngularVelocity = maxL
-		trainA.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		trainA.RRAxle.HingeConstraint.AngularVelocity = maxL
+		trainA.FLAxle.HingeConstraint.AngularVelocity = zero
+		trainA.FRAxle.HingeConstraint.AngularVelocity = zero
+		trainA.RLAxle.HingeConstraint.AngularVelocity = zero	
+		trainA.RRAxle.HingeConstraint.AngularVelocity = zero
 
-		train1.FLAxle.HingeConstraint.AngularVelocity = maxR
-		train1.FRAxle.HingeConstraint.AngularVelocity = maxL
-		train1.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		train1.RRAxle.HingeConstraint.AngularVelocity = maxL
+		train1.FLAxle.HingeConstraint.AngularVelocity = zero
+		train1.FRAxle.HingeConstraint.AngularVelocity = zero
+		train1.RLAxle.HingeConstraint.AngularVelocity = zero	
+		train1.RRAxle.HingeConstraint.AngularVelocity = zero
 
-		train1A.FLAxle.HingeConstraint.AngularVelocity = maxR
-		train1A.FRAxle.HingeConstraint.AngularVelocity = maxL
-		train1A.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		train1A.RRAxle.HingeConstraint.AngularVelocity = maxL
+		train1A.FLAxle.HingeConstraint.AngularVelocity = zero
+		train1A.FRAxle.HingeConstraint.AngularVelocity = zero
+		train1A.RLAxle.HingeConstraint.AngularVelocity = zero	
+		train1A.RRAxle.HingeConstraint.AngularVelocity = zero
 		
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
@@ -84,25 +84,25 @@ local function forward() -- Moves the KM Forward
 		train.Wheel3.Friction = 1
 		train.Wheel4.Friction = 1
 
-		train.FLAxle.HingeConstraint.AngularVelocity = maxR
-		train.FRAxle.HingeConstraint.AngularVelocity = maxL
-		train.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		train.RRAxle.HingeConstraint.AngularVelocity = maxL
+		train.FLAxle.HingeConstraint.AngularVelocity = zero
+		train.FRAxle.HingeConstraint.AngularVelocity = zero
+		train.RLAxle.HingeConstraint.AngularVelocity = zero	
+		train.RRAxle.HingeConstraint.AngularVelocity = zero
 
-		trainA.FLAxle.HingeConstraint.AngularVelocity = maxR
-		trainA.FRAxle.HingeConstraint.AngularVelocity = maxL
-		trainA.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		trainA.RRAxle.HingeConstraint.AngularVelocity = maxL
+		trainA.FLAxle.HingeConstraint.AngularVelocity = zero
+		trainA.FRAxle.HingeConstraint.AngularVelocity = zero
+		trainA.RLAxle.HingeConstraint.AngularVelocity = zero	
+		trainA.RRAxle.HingeConstraint.AngularVelocity = zero
 
-		train1.FLAxle.HingeConstraint.AngularVelocity = maxR
-		train1.FRAxle.HingeConstraint.AngularVelocity = maxL
-		train1.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		train1.RRAxle.HingeConstraint.AngularVelocity = maxL
+		train1.FLAxle.HingeConstraint.AngularVelocity = zero
+		train1.FRAxle.HingeConstraint.AngularVelocity = zero
+		train1.RLAxle.HingeConstraint.AngularVelocity = zero	
+		train1.RRAxle.HingeConstraint.AngularVelocity = zero
 
-		train1A.FLAxle.HingeConstraint.AngularVelocity = maxR
-		train1A.FRAxle.HingeConstraint.AngularVelocity = maxL
-		train1A.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		train1A.RRAxle.HingeConstraint.AngularVelocity = maxL
+		train1A.FLAxle.HingeConstraint.AngularVelocity = zero
+		train1A.FRAxle.HingeConstraint.AngularVelocity = zero
+		train1A.RLAxle.HingeConstraint.AngularVelocity = zero	
+		train1A.RRAxle.HingeConstraint.AngularVelocity = zero
 	
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = minusone
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = minusone
@@ -130,10 +130,10 @@ local function forward() -- Moves the KM Forward
 		
 	elseif script.Km.Value == -1 then
 		
-		train.Wheel1.Friction = 0.3
-		train.Wheel2.Friction = 0.3
-		train.Wheel3.Friction = 0.3
-		train.Wheel4.Friction = 0.3
+		train.Wheel1.Friction = 1
+		train.Wheel2.Friction = 1
+		train.Wheel3.Friction = 1
+		train.Wheel4.Friction = 1
 		
 		train.FLAxle.HingeConstraint.AngularVelocity = zero
 		train.FRAxle.HingeConstraint.AngularVelocity = zero
@@ -182,10 +182,10 @@ local function forward() -- Moves the KM Forward
 	
 	elseif script.Km.Value == 0 then
 		
-		train.Wheel1.Friction = 0.3
-		train.Wheel2.Friction = 0.3
-		train.Wheel3.Friction = 0.3
-		train.Wheel4.Friction = 0.3
+		train.Wheel1.Friction = 1
+		train.Wheel2.Friction = 1
+		train.Wheel3.Friction = 1
+		train.Wheel4.Friction = 1
 		
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = one
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = one
@@ -233,10 +233,10 @@ local function forward() -- Moves the KM Forward
 		
 	elseif script.Km.Value == 1 then
 		
-		train.Wheel1.Friction = 0.3
-		train.Wheel2.Friction = 0.3
-		train.Wheel3.Friction = 0.3
-		train.Wheel4.Friction = 0.3
+		train.Wheel1.Friction = 1
+		train.Wheel2.Friction = 1
+		train.Wheel3.Friction = 1
+		train.Wheel4.Friction = 1
 		
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = two
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = two
@@ -264,10 +264,10 @@ local function forward() -- Moves the KM Forward
 		
 	elseif script.Km.Value == 2 then
 		
-		train.Wheel1.Friction = 0.3
-		train.Wheel2.Friction = 0.3
-		train.Wheel3.Friction = 0.3
-		train.Wheel4.Friction = 0.3
+		train.Wheel1.Friction = 1
+		train.Wheel2.Friction = 1
+		train.Wheel3.Friction = 1
+		train.Wheel4.Friction = 1
 		
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = three
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = three
@@ -300,10 +300,10 @@ fwd.OnServerEvent:Connect(forward)
 local function reverse() -- Moves the KM Backwards
 	if script.Km.Value == 3 then
 		
-		train.Wheel1.Friction = 0.3
-		train.Wheel2.Friction = 0.3
-		train.Wheel3.Friction = 0.3
-		train.Wheel4.Friction = 0.3
+		train.Wheel1.Friction = 1
+		train.Wheel2.Friction = 1
+		train.Wheel3.Friction = 1
+		train.Wheel4.Friction = 1
 		
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = two
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = two
@@ -331,10 +331,10 @@ local function reverse() -- Moves the KM Backwards
 		
 	elseif script.Km.Value == 2 then
 		
-		train.Wheel1.Friction = 0.3
-		train.Wheel2.Friction = 0.3
-		train.Wheel3.Friction = 0.3
-		train.Wheel4.Friction = 0.3
+		train.Wheel1.Friction = 1
+		train.Wheel2.Friction = 1
+		train.Wheel3.Friction = 1
+		train.Wheel4.Friction = 1
 		
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = one
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = one
@@ -398,25 +398,25 @@ local function reverse() -- Moves the KM Backwards
 		train.Wheel3.Friction = 1
 		train.Wheel4.Friction = 1
 		
-		train.FLAxle.HingeConstraint.AngularVelocity = maxR
-		train.FRAxle.HingeConstraint.AngularVelocity = maxL
-		train.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		train.RRAxle.HingeConstraint.AngularVelocity = maxL
+		train.FLAxle.HingeConstraint.AngularVelocity = zero
+		train.FRAxle.HingeConstraint.AngularVelocity = zero
+		train.RLAxle.HingeConstraint.AngularVelocity = zero	
+		train.RRAxle.HingeConstraint.AngularVelocity = zero
 
-		trainA.FLAxle.HingeConstraint.AngularVelocity = maxR
-		trainA.FRAxle.HingeConstraint.AngularVelocity = maxL
-		trainA.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		trainA.RRAxle.HingeConstraint.AngularVelocity = maxL
+		trainA.FLAxle.HingeConstraint.AngularVelocity = zero
+		trainA.FRAxle.HingeConstraint.AngularVelocity = zero
+		trainA.RLAxle.HingeConstraint.AngularVelocity = zero	
+		trainA.RRAxle.HingeConstraint.AngularVelocity = zero
 
-		train1.FLAxle.HingeConstraint.AngularVelocity = maxR
-		train1.FRAxle.HingeConstraint.AngularVelocity = maxL
-		train1.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		train1.RRAxle.HingeConstraint.AngularVelocity = maxL
+		train1.FLAxle.HingeConstraint.AngularVelocity = zero
+		train1.FRAxle.HingeConstraint.AngularVelocity = zero
+		train1.RLAxle.HingeConstraint.AngularVelocity = zero	
+		train1.RRAxle.HingeConstraint.AngularVelocity = zero
 
-		train1A.FLAxle.HingeConstraint.AngularVelocity = maxR
-		train1A.FRAxle.HingeConstraint.AngularVelocity = maxL
-		train1A.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		train1A.RRAxle.HingeConstraint.AngularVelocity = maxL
+		train1A.FLAxle.HingeConstraint.AngularVelocity = zero
+		train1A.FRAxle.HingeConstraint.AngularVelocity = zero
+		train1A.RLAxle.HingeConstraint.AngularVelocity = zero	
+		train1A.RRAxle.HingeConstraint.AngularVelocity = zero
 		-----
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = minusone
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = minusone
@@ -449,25 +449,25 @@ local function reverse() -- Moves the KM Backwards
 		train.Wheel3.Friction = 1
 		train.Wheel4.Friction = 1
 		
-		train.FLAxle.HingeConstraint.AngularVelocity = maxR
-		train.FRAxle.HingeConstraint.AngularVelocity = maxL
-		train.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		train.RRAxle.HingeConstraint.AngularVelocity = maxL
+		train.FLAxle.HingeConstraint.AngularVelocity = zero
+		train.FRAxle.HingeConstraint.AngularVelocity = zero
+		train.RLAxle.HingeConstraint.AngularVelocity = zero	
+		train.RRAxle.HingeConstraint.AngularVelocity = zero
 
-		trainA.FLAxle.HingeConstraint.AngularVelocity = maxR
-		trainA.FRAxle.HingeConstraint.AngularVelocity = maxL
-		trainA.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		trainA.RRAxle.HingeConstraint.AngularVelocity = maxL
+		trainA.FLAxle.HingeConstraint.AngularVelocity = zero
+		trainA.FRAxle.HingeConstraint.AngularVelocity = zero
+		trainA.RLAxle.HingeConstraint.AngularVelocity = zero	
+		trainA.RRAxle.HingeConstraint.AngularVelocity = zero
 
-		train1.FLAxle.HingeConstraint.AngularVelocity = maxR
-		train1.FRAxle.HingeConstraint.AngularVelocity = maxL
-		train1.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		train1.RRAxle.HingeConstraint.AngularVelocity = maxL
+		train1.FLAxle.HingeConstraint.AngularVelocity = zero
+		train1.FRAxle.HingeConstraint.AngularVelocity = zero
+		train1.RLAxle.HingeConstraint.AngularVelocity = zero	
+		train1.RRAxle.HingeConstraint.AngularVelocity = zero
 
-		train1A.FLAxle.HingeConstraint.AngularVelocity = maxR
-		train1A.FRAxle.HingeConstraint.AngularVelocity = maxL
-		train1A.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		train1A.RRAxle.HingeConstraint.AngularVelocity = maxL
+		train1A.FLAxle.HingeConstraint.AngularVelocity = zero
+		train1A.FRAxle.HingeConstraint.AngularVelocity = zero
+		train1A.RLAxle.HingeConstraint.AngularVelocity = zero	
+		train1A.RRAxle.HingeConstraint.AngularVelocity = zero
 		
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = minustwo
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = minustwo
@@ -500,25 +500,25 @@ local function reverse() -- Moves the KM Backwards
 		train.Wheel3.Friction = 1
 		train.Wheel4.Friction = 1 
 		
-		train.FLAxle.HingeConstraint.AngularVelocity = maxR
-		train.FRAxle.HingeConstraint.AngularVelocity = maxL
-		train.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		train.RRAxle.HingeConstraint.AngularVelocity = maxL
+		train.FLAxle.HingeConstraint.AngularVelocity = zero
+		train.FRAxle.HingeConstraint.AngularVelocity = zero
+		train.RLAxle.HingeConstraint.AngularVelocity = zero	
+		train.RRAxle.HingeConstraint.AngularVelocity = zero
 
-		trainA.FLAxle.HingeConstraint.AngularVelocity = maxR
-		trainA.FRAxle.HingeConstraint.AngularVelocity = maxL
-		trainA.RLAxle.HingeConstraint.AngularVelocity = maxR	
-		trainA.RRAxle.HingeConstraint.AngularVelocity = maxL
+		trainA.FLAxle.HingeConstraint.AngularVelocity = zero
+		trainA.FRAxle.HingeConstraint.AngularVelocity = zero
+		trainA.RLAxle.HingeConstraint.AngularVelocity = zero	
+		trainA.RRAxle.HingeConstraint.AngularVelocity = zero
 
-		train1.FLAxle.HingeConstraint.AngularVelocity = maxR
-		train1.FRAxle.HingeConstraint.AngularVelocity = maxL
-		train1.RLAxle.HingeConstraint.AngularVelocity = maxR
-		train1.RRAxle.HingeConstraint.AngularVelocity = maxL
+		train1.FLAxle.HingeConstraint.AngularVelocity = zero
+		train1.FRAxle.HingeConstraint.AngularVelocity = zero
+		train1.RLAxle.HingeConstraint.AngularVelocity = zero
+		train1.RRAxle.HingeConstraint.AngularVelocity = zero
 
-		train1A.FLAxle.HingeConstraint.AngularVelocity = maxR
-		train1A.FRAxle.HingeConstraint.AngularVelocity = maxL
-		train1A.RLAxle.HingeConstraint.AngularVelocity = maxR
-		train1A.RRAxle.HingeConstraint.AngularVelocity = maxL
+		train1A.FLAxle.HingeConstraint.AngularVelocity = zero
+		train1A.FRAxle.HingeConstraint.AngularVelocity = zero
+		train1A.RLAxle.HingeConstraint.AngularVelocity = zero
+		train1A.RRAxle.HingeConstraint.AngularVelocity = zero
 		
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = minusthree
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = minusthree
