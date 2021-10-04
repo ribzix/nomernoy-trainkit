@@ -362,10 +362,10 @@ local function reverse() -- Moves the KM Backwards
 		
 	elseif script.Km.Value == 1 then
 		
-		train.Wheel1.Friction = 0.3
-		train.Wheel2.Friction = 0.3
-		train.Wheel3.Friction = 0.3
-		train.Wheel4.Friction = 0.3
+		train.Wheel1.Friction = 1
+		train.Wheel2.Friction = 1
+		train.Wheel3.Friction = 1
+		train.Wheel4.Friction = 1
 		
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = zero
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = zero
