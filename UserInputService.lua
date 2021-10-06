@@ -47,6 +47,7 @@ UIS.InputBegan:connect(function(Input)
 
 
 		elseif KeyCode == Enum.KeyCode.Space then
+			print("eb was pressed")
 			EmergencyBreak:FireServer()
 
 
@@ -74,4 +75,3 @@ UIS.InputBegan:connect(function(Input)
 		end
 	end
 end)
-

@@ -500,3 +500,17 @@ local function lightsOff()
 	trainA.PartOne.SpotLight.Enabled = false
 end
 lof.OnServerEvent:Connect(lightsOff)
+--
+local function ebreak()
+	workspace.EB.Value = true
+	print(eb)
+end
+eb.OnServerEvent:Connect(ebreak)
+eb.OnServerEvent:Connect(reverse)
+eb.OnServerEvent:Connect(reverse)
+eb.OnServerEvent:Connect(reverse)
+eb.OnServerEvent:Connect(reverse)
+eb.OnServerEvent:Connect(reverse)
+eb.OnServerEvent:Connect(reverse)
+eb.OnServerEvent:Connect(reverse)
+--
