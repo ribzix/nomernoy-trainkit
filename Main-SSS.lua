@@ -24,21 +24,16 @@ local three = "8"
 ---
 local maxL = "80"
 local maxR = "-80"
----
-train.Wheel1.Friction = 1
-train.Wheel2.Friction = 1
-train.Wheel3.Friction = 1
-train.Wheel4.Friction = 1
 -----
 local function forward() -- Moves the KM Forward
 	if script.Km.Value == -3 then
 
-train.FLAxle.HingeConstraint.AngularVelocity = zero
+		train.FLAxle.HingeConstraint.AngularVelocity = zero
 		train.FRAxle.HingeConstraint.AngularVelocity = zero
 		train.RLAxle.HingeConstraint.AngularVelocity = zero
 		train.RRAxle.HingeConstraint.AngularVelocity = zero
 
-trainA.FLAxle.HingeConstraint.AngularVelocity = zero
+		trainA.FLAxle.HingeConstraint.AngularVelocity = zero
 		trainA.FRAxle.HingeConstraint.AngularVelocity = zero
 		trainA.RLAxle.HingeConstraint.AngularVelocity = zero	
 		trainA.RRAxle.HingeConstraint.AngularVelocity = zero
@@ -78,7 +73,6 @@ trainA.FLAxle.HingeConstraint.AngularVelocity = zero
 		wait(1)
     
 	elseif script.Km.Value == -2 then
-	
 
 		train.FLAxle.HingeConstraint.AngularVelocity = zero
 		train.FRAxle.HingeConstraint.AngularVelocity = zero
@@ -125,11 +119,6 @@ trainA.FLAxle.HingeConstraint.AngularVelocity = zero
 		wait(1)
 		
 	elseif script.Km.Value == -1 then
-		
-		train.Wheel1.Friction = 1
-		train.Wheel2.Friction = 1
-		train.Wheel3.Friction = 1
-		train.Wheel4.Friction = 1
 		
 		train.FLAxle.HingeConstraint.AngularVelocity = zero
 		train.FRAxle.HingeConstraint.AngularVelocity = zero
@@ -224,7 +213,6 @@ trainA.FLAxle.HingeConstraint.AngularVelocity = zero
 		
 	elseif script.Km.Value == 1 then
 		
-		
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = two
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = two
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = two
@@ -251,7 +239,6 @@ trainA.FLAxle.HingeConstraint.AngularVelocity = zero
 		
 	elseif script.Km.Value == 2 then
 		
-	
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = three
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = three
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = three
@@ -283,7 +270,6 @@ fwd.OnServerEvent:Connect(forward)
 local function reverse() -- Moves the KM Backwards
 	if script.Km.Value == 3 then
 		
-		
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = two
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = two
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = two
@@ -309,8 +295,6 @@ local function reverse() -- Moves the KM Backwards
 		wait(1)
 		
 	elseif script.Km.Value == 2 then
-		
-		
 		
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = one
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = one
@@ -338,8 +322,6 @@ local function reverse() -- Moves the KM Backwards
 		
 	elseif script.Km.Value == 1 then
 		
-		
-		
 		train.FLAxle.HingeConstraint.MotorMaxAcceleration = zero
 		train.FRAxle.HingeConstraint.MotorMaxAcceleration = zero
 		train.RLAxle.HingeConstraint.MotorMaxAcceleration = zero
@@ -365,8 +347,6 @@ local function reverse() -- Moves the KM Backwards
 		wait(1)
 		
 	elseif script.Km.Value == 0 then
-		
-		
 		
 		train.FLAxle.HingeConstraint.AngularVelocity = zero
 		train.FRAxle.HingeConstraint.AngularVelocity = zero
@@ -414,8 +394,6 @@ local function reverse() -- Moves the KM Backwards
 		
 	elseif script.Km.Value == -1 then
 		
-		
-		
 		train.FLAxle.HingeConstraint.AngularVelocity = zero
 		train.FRAxle.HingeConstraint.AngularVelocity = zero
 		train.RLAxle.HingeConstraint.AngularVelocity = zero	
@@ -460,9 +438,7 @@ local function reverse() -- Moves the KM Backwards
 		workspace.Km.Value.Value = -2
 		wait(1)
 		
-	elseif script.Km.Value == -2 then
-		
-		
+	elseif script.Km.Value == -2 then 
 		
 		train.FLAxle.HingeConstraint.AngularVelocity = zero
 		train.FRAxle.HingeConstraint.AngularVelocity = zero
@@ -514,13 +490,13 @@ end
 rwd.OnServerEvent:Connect(reverse)
 --
 local function lightsOn()
-	print("huebus")
-	train.PartOne.SpotLight.Enabled = true
+	print("On")
+	trainA.PartOne.SpotLight.Enabled = true
 end
 lon.OnServerEvent:Connect(lightsOn)
 --
 local function lightsOff()
-	print("abobus")
-	train.PartOne.SpotLight.Enabled = false
+	print("Off")
+	trainA.PartOne.SpotLight.Enabled = false
 end
 lof.OnServerEvent:Connect(lightsOff)
