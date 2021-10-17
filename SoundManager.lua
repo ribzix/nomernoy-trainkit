@@ -16,6 +16,7 @@ local ho = RS:WaitForChild("Horn") --
 -----
 
 local function playKm() -- plays the km sound
+	workspace.Seat.Lights.TimePosition = 0
 	workspace.Seat.KM.Playing = true
 	wait(0.425)
 	workspace.Seat.KM.Playing = false
@@ -24,6 +25,7 @@ fwd.OnServerEvent:Connect(playKm)
 rwd.OnServerEvent:Connect(playKm)
 
 local function playLights() -- plays the light tumbler sound
+	workspace.Seat.Lights.TimePosition = 0
 	workspace.Seat.Lights.Playing = true
 	wait(0.298)
 	workspace.Seat.Lights.Playing = false
