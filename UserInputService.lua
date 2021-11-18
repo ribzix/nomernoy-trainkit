@@ -8,23 +8,21 @@ local lightsOff = RS:WaitForChild("LightsOff")
 local up = RS:WaitForChild("Up")
 local down = RS:WaitForChild("Down")
 local EmergencyBreak = RS:WaitForChild("EB")
+local pedal = RS:WaitForChild("Pedal")
 -----
 local rev = script.Rev.Value
 local pos = script.Position.Value
 local lg = script.Lg.Value
 -----
------
------
------
------
 local UIS = game:GetService("UserInputService")
+-----
+wait(5)
 
 UIS.InputBegan:connect(function(Input)
 	if rev == "3" then -- Fwd position of the reverse controller
 		local KeyCode = Input.KeyCode 
 		if KeyCode == Enum.KeyCode.Q then
 			print("Q was pressed")
-
 
 		elseif KeyCode == Enum.KeyCode.A then
 			print("FWD was pressed")
@@ -46,7 +44,7 @@ UIS.InputBegan:connect(function(Input)
 
 
 
-		elseif KeyCode == Enum.KeyCode.Space then
+		elseif KeyCode == Enum.KeyCode.K then
 			print("eb was pressed")
 			EmergencyBreak:FireServer()
 
@@ -64,14 +62,14 @@ UIS.InputBegan:connect(function(Input)
 				lg = true	
 				end
 		 
-		elseif KeyCode == Enum.KeyCode.F then
+		elseif KeyCode == Enum.KeyCode.F then -- security pedal
+			pedal:FireServer()
 			print("F was pressed")
 
 
 
 		elseif KeyCode == Enum.KeyCode.R then
 			print("R was pressed")
-			
 		end
 	end
 end)

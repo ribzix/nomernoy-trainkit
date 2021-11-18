@@ -1,7 +1,7 @@
-local train = workspace.BogeyTest
-local trainA = workspace.BogeyONE
-local train1 = workspace.TrainC2.BogeyONE
-local train1A = workspace.TrainC2.BogeyTest
+local train = workspace.Train.BogeyTest
+local trainA = workspace.Train.BogeyONE
+local train1 = workspace.Train.TrainC2.BogeyONE
+local train1A = workspace.Train.TrainC2.BogeyTest
 -----
 local RS = game:GetService("ReplicatedStorage")
 -----
@@ -14,7 +14,7 @@ local dn = RS:WaitForChild("Down")
 local eb = RS:WaitForChild("EB") --
 local ho = RS:WaitForChild("Horn") --
 -----
-
+wait(5)
 local function playKm() -- plays the km sound
 	workspace.Seat.Lights.TimePosition = 0
 	workspace.Seat.KM.Playing = true
