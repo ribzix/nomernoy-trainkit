@@ -12,12 +12,14 @@ Then, get the following scripts scripts:
 - MainSSS.lua
 - guiStuff.lua
 - Events.rbxm
+- Screen.rbxm
 
  Insert them in the following places: 
 - UserInputService.lua - StarterPlayer
 - MainSSS.lua - ServerScriptService
 - guiStuff.lua - StarterGui
 - Events.rbxm - ReplicatedStorage
+- Screen.rbxm - StarterGui
  
  In the workspace, create a boolean value named "EB" and a part called "KM". Create a "NumberValue" as a child of "KM"
  
