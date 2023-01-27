@@ -1,12 +1,33 @@
-local rk = {}
+rev = {
+    RRIns = false 
+    pos = 0
+}
 
-rk.pos = 0
-rk.rotating = false
+kru = {
+    inop = true
+    RRIns = false
+    pos = 0
+}
 
+km = {
+    pos = 0
+    locked = true
+    fixed = true
+}
 
-local current {}
+pnk = {
+    pos = 6
+    KranEPK = false
+    KranTM = false
+}
 
-current.available = false
-current.amp = 0
-current.watt = 0
+rk = {
+    pos = 0,
+    rotating = false,
+}
 
+current {
+    available = false,
+    amp = 0,
+    watt = 0,
+}
