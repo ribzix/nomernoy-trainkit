@@ -1,24 +1,24 @@
 rev = {
-    RRIns = false 
-    pos = 0
+    RRIns = false,
+    pos = 0,
 }
 
 kru = {
-    inop = true
-    RRIns = false
-    pos = 0
+    inop = true,
+    RRIns = false,
+    pos = 0,
 }
 
 km = {
-    pos = 0
-    locked = true
-    fixed = true
+    pos = 0,
+    locked = true,
+    fixed = true,
 }
 
 pnk = {
-    pos = 6
-    KranEPK = false
-    KranTM = false
+    pos = 6,
+    KranEPK = false,
+    KranTM = false,
 }
 
 rk = {
