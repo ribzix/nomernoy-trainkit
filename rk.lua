@@ -24,21 +24,19 @@ km = {
 
     lock = function(tbl)
         tbl.lock = true
-    end
+    end,
 
     unlock = function(tbl)
         tbl.lock = false
-    end
+    end,
 
     fix = function(tbl)
         fixed = true
-    end
+    end,
 
     unfix = function(tbl)
         fixed = false
-    end
-
-
+    end,
 }
 
 pnk = {
@@ -58,6 +56,7 @@ current = {
     watt = 0,
 
     getCurrent = function()
-
+    end
+    
         
 }
