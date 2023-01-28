@@ -1,6 +1,8 @@
 rev = {
     RRIns = false,
     pos = 0,
+
+
 }
 
 kru = {
@@ -11,8 +13,26 @@ kru = {
 
 km = {
     pos = 0,
-    locked = true,
-    fixed = true,
+    locked = false,
+    fixed = false,
+
+    lock = function(tbl)
+        tbl.lock = true
+    end
+
+    unlock = function(tbl)
+        tbl.lock = false
+    end
+
+    fix = function(tbl)
+        fixed = true
+    end
+
+    unfix = function(tbl)
+        fixed = false
+    end
+
+
 }
 
 pnk = {
@@ -26,8 +46,11 @@ rk = {
     rotating = false,
 }
 
-current {
+current = {
     available = false,
     amp = 0,
     watt = 0,
+
+    getCurrent = function()
+        self.
 }
