@@ -1,8 +1,14 @@
+local HttpService = game:GetService("HttpService")
+
+trinit = function()
+    local trn = HttpService:GenerateGUID(false)
+end
+
+
+
 rev = {
     RRIns = false,
     pos = 0,
-
-
 }
 
 kru = {
@@ -52,5 +58,6 @@ current = {
     watt = 0,
 
     getCurrent = function()
-        self.
+
+        
 }
