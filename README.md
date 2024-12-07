@@ -7,7 +7,7 @@ Guide on how to install the trainkit.
 
 First - get the train.experimental.rbxm file and insert it into the workspace.
 
-Then, get the following scripts scripts:
+Then, get the following scripts into scripts:
 - UserInputService.lua
 - MainSSS.lua
 - guiStuff.lua
